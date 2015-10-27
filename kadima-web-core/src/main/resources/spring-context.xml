@@ -30,7 +30,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="typeAliasesPackage" value="com.bei2love.kadima"/>
         <property name="typeAliasesSuperType" value="com.bei2love.kadima.commons.persistence.BaseEntity"/>
-        <property name="mapperLocations" value="classpath:/mappings/**/*.xml"/>
+        <property name="mapperLocations" value="classpath:/mappings/kadima/**/*.xml"/>
 		<property name="configLocation" value="classpath:/mybatis-config.xml"></property>
     </bean>
     
@@ -61,7 +61,8 @@
 	<!-- 计划任务配置，用 @Service @Lazy(false)标注类，用@Scheduled(cron = "0 0 2 * * ?")标注方法 -->
     <task:executor id="executor" pool-size="10"/> <task:scheduler id="scheduler" pool-size="10"/>
     <task:annotation-driven scheduler="scheduler" executor="executor" proxy-target-class="true"/>
-    
+
+
 	<!-- 数据源配置, 使用 BoneCP 数据库连接池 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close"> 
 	    <!-- 数据源驱动类可不写，Druid默认会自动根据URL识别DriverClass -->
@@ -109,5 +110,6 @@
 		<property name="username" value="${jdbc.username}"/>
 		<property name="password" value="${jdbc.password}"/>
 	</bean>-->
-	
+
+	<import resource="spring-extends.xml"/>
 </beans>
