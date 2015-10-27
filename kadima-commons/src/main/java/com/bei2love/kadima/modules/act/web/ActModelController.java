@@ -1,11 +1,9 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.web;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.bei2love.kadima.commons.persistence.Page;
+import com.bei2love.kadima.commons.web.BaseController;
+import com.bei2love.kadima.modules.act.service.ActModelService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,20 +12,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.bei2love.kadima.commons.persistence.Page;
-import com.bei2love.kadima.commons.web.BaseController;
-import com.thinkgem.jeesite.modules.act.service.ActModelService;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * 流程模型相关Controller
  * @author ThinkGem
  * @version 2013-11-03
  */
-@Controller
-@RequestMapping(value = "${adminPath}/act/model")
+//@Controller
+//@RequestMapping(value = "${adminPath}/act/model")
 public class ActModelController extends BaseController {
 
-	@Autowired
+//	@Autowired
 	private ActModelService actModelService;
 
 	/**

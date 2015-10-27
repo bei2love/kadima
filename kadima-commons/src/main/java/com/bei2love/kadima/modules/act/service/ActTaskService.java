@@ -1,22 +1,19 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.service;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
+import com.bei2love.kadima.commons.persistence.Page;
+import com.bei2love.kadima.commons.service.BaseService;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.bei2love.kadima.modules.act.dao.ActDao;
+import com.bei2love.kadima.modules.act.entity.Act;
+import com.bei2love.kadima.modules.act.utils.ActUtils;
+import com.bei2love.kadima.modules.act.utils.ProcessDefCache;
+import com.bei2love.kadima.modules.sys.entity.User;
+import com.bei2love.kadima.modules.sys.utils.UserUtils;
 import org.activiti.bpmn.model.BpmnModel;
-import org.activiti.engine.FormService;
-import org.activiti.engine.HistoryService;
-import org.activiti.engine.IdentityService;
-import org.activiti.engine.RepositoryService;
-import org.activiti.engine.RuntimeService;
-import org.activiti.engine.TaskService;
+import org.activiti.engine.*;
 import org.activiti.engine.delegate.Expression;
 import org.activiti.engine.history.HistoricActivityInstance;
 import org.activiti.engine.history.HistoricProcessInstance;
@@ -45,48 +42,39 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.bei2love.kadima.commons.persistence.Page;
-import com.bei2love.kadima.commons.service.BaseService;
-import com.bei2love.kadima.commons.utils.StringUtils;
-import com.thinkgem.jeesite.modules.act.dao.ActDao;
-import com.thinkgem.jeesite.modules.act.entity.Act;
-import com.thinkgem.jeesite.modules.act.utils.ActUtils;
-import com.thinkgem.jeesite.modules.act.utils.ProcessDefCache;
-import com.thinkgem.jeesite.modules.sys.entity.User;
-import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
+import java.io.InputStream;
+import java.util.*;
 
 /**
  * 流程定义相关Service
  * @author ThinkGem
  * @version 2013-11-03
  */
-@Service
-@Transactional(readOnly = true)
+//@Service
+//@Transactional(readOnly = true)
 public class ActTaskService extends BaseService {
 
-	@Autowired
+//	@Autowired
 	private ActDao actDao;
 	
-	@Autowired
+//	@Autowired
 	private ProcessEngineFactoryBean processEngine;
-	@Autowired
+//	@Autowired
 	private RuntimeService runtimeService;
-	@Autowired
+//	@Autowired
 	private TaskService taskService;
-	@Autowired
+//	@Autowired
 	private FormService formService;
-	@Autowired
+//	@Autowired
 	private HistoryService historyService;
-	@Autowired
+//	@Autowired
 	private RepositoryService repositoryService;
-	@Autowired
+//	@Autowired
 	private IdentityService identityService;
 	
 	/**
 	 * 获取待办列表
-	 * @param procDefKey 流程定义标识
+	 * @param act 流程定义标识
 	 * @return
 	 */
 	public List<Act> todoList(Act act){

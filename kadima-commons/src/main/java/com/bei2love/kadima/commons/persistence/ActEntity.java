@@ -1,12 +1,10 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.persistence;
 
-import java.io.Serializable;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.thinkgem.jeesite.modules.act.entity.Act;
+import com.bei2love.kadima.modules.act.entity.Act;
+
+import java.io.Serializable;
 
 /**
  * Activiti Entity类

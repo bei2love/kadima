@@ -1,18 +1,15 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.utils;
 
-import java.util.List;
-
+import com.bei2love.kadima.commons.utils.CacheUtils;
+import com.bei2love.kadima.commons.utils.SpringContextHolder;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.impl.persistence.entity.ProcessDefinitionEntity;
 import org.activiti.engine.impl.pvm.process.ActivityImpl;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.apache.commons.lang3.ObjectUtils;
 
-import com.bei2love.kadima.commons.utils.CacheUtils;
-import com.bei2love.kadima.commons.utils.SpringContextHolder;
+import java.util.List;
 
 /**
  * 流程定义缓存

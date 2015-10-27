@@ -1,6 +1,10 @@
 package com.bei2love.kadima.commons.utils;
 
-import java.io.*;
+import java.io.File;
+import com.drew.metadata.*;
+import com.drew.metadata.exif.*;
+import com.drew.imaging.jpeg.*;
+import com.drew.lang.*;
 
 public class ImageGeo {
 	public double lat = 0.0;

@@ -1,21 +1,9 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.service;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.zip.ZipInputStream;
-
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
-
+import com.bei2love.kadima.commons.persistence.Page;
+import com.bei2love.kadima.commons.service.BaseService;
+import com.bei2love.kadima.commons.utils.StringUtils;
 import org.activiti.bpmn.converter.BpmnXMLConverter;
 import org.activiti.bpmn.model.BpmnModel;
 import org.activiti.editor.constants.ModelDataJsonConstants;
@@ -37,22 +25,26 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.bei2love.kadima.commons.persistence.Page;
-import com.bei2love.kadima.commons.service.BaseService;
-import com.bei2love.kadima.commons.utils.StringUtils;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.zip.ZipInputStream;
 
 /**
  * 流程定义相关Controller
  * @author ThinkGem
  * @version 2013-11-03
  */
-@Service
-@Transactional(readOnly = true)
+//@Service
+//@Transactional(readOnly = true)
 public class ActProcessService extends BaseService {
 
-	@Autowired
+//	@Autowired
 	private RepositoryService repositoryService;
-	@Autowired
+//	@Autowired
 	private RuntimeService runtimeService;
 
 	/**

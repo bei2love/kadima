@@ -1,11 +1,9 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.utils.excel.fieldtype;
 
-import com.thinkgem.jeesite.common.utils.StringUtils;
-import com.thinkgem.jeesite.modules.sys.entity.Office;
-import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.bei2love.kadima.modules.sys.entity.Office;
+import com.bei2love.kadima.modules.sys.utils.UserUtils;
 
 /**
  * 字段类型转换

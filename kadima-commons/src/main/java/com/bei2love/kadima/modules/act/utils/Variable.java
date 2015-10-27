@@ -1,15 +1,12 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.utils;
 
-import java.util.Map;
-
-import org.apache.commons.beanutils.ConvertUtils;
-
+import com.bei2love.kadima.commons.utils.StringUtils;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.collect.Maps;
-import com.bei2love.kadima.commons.utils.StringUtils;
+import org.apache.commons.beanutils.ConvertUtils;
+
+import java.util.Map;
 
 /**
  * 流程变量对象

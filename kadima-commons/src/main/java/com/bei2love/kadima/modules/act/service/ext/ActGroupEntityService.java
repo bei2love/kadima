@@ -1,11 +1,12 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.service.ext;
 
-import java.util.List;
-import java.util.Map;
-
+import com.bei2love.kadima.commons.utils.SpringContextHolder;
+import com.google.common.collect.Lists;
+import com.bei2love.kadima.modules.act.utils.ActUtils;
+import com.bei2love.kadima.modules.sys.entity.Role;
+import com.bei2love.kadima.modules.sys.entity.User;
+import com.bei2love.kadima.modules.sys.service.SystemService;
 import org.activiti.engine.identity.Group;
 import org.activiti.engine.identity.GroupQuery;
 import org.activiti.engine.impl.GroupQueryImpl;
@@ -14,12 +15,8 @@ import org.activiti.engine.impl.persistence.entity.GroupEntity;
 import org.activiti.engine.impl.persistence.entity.GroupEntityManager;
 import org.springframework.stereotype.Service;
 
-import com.google.common.collect.Lists;
-import com.bei2love.kadima.commons.utils.SpringContextHolder;
-import com.thinkgem.jeesite.modules.act.utils.ActUtils;
-import com.thinkgem.jeesite.modules.sys.entity.Role;
-import com.thinkgem.jeesite.modules.sys.entity.User;
-import com.thinkgem.jeesite.modules.sys.service.SystemService;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Activiti Group Entity Service

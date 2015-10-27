@@ -1,17 +1,11 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.supcan.annotation.treelist;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import com.bei2love.kadima.commons.supcan.annotation.common.fonts.SupFont;
+import com.bei2love.kadima.commons.supcan.annotation.common.properties.SupProperties;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.cols.SupGroup;
 
-import com.thinkgem.jeesite.common.supcan.annotation.common.fonts.SupFont;
-import com.thinkgem.jeesite.common.supcan.annotation.common.properties.SupProperties;
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.cols.SupGroup;
+import java.lang.annotation.*;
 
 /**
  * 硕正TreeList注解

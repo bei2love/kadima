@@ -1,17 +1,10 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.web;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.xml.stream.XMLStreamException;
-
+import com.bei2love.kadima.commons.persistence.Page;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.bei2love.kadima.commons.web.BaseController;
+import com.bei2love.kadima.modules.act.service.ActProcessService;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,21 +18,24 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.bei2love.kadima.commons.persistence.Page;
-import com.bei2love.kadima.commons.utils.StringUtils;
-import com.bei2love.kadima.commons.web.BaseController;
-import com.thinkgem.jeesite.modules.act.service.ActProcessService;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.stream.XMLStreamException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 /**
  * 流程定义相关Controller
  * @author ThinkGem
  * @version 2013-11-03
  */
-@Controller
-@RequestMapping(value = "${adminPath}/act/process")
+//@Controller
+//@RequestMapping(value = "${adminPath}/act/process")
 public class ActProcessController extends BaseController {
 
-	@Autowired
+//	@Autowired
 	private ActProcessService actProcessService;
 
 	/**

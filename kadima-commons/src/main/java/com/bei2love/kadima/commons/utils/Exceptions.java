@@ -3,10 +3,9 @@
  */
 package com.bei2love.kadima.commons.utils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 关于异常的工具类.

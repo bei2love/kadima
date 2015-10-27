@@ -1,11 +1,8 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.persistence.dialect.db;
 
+import com.bei2love.kadima.commons.persistence.dialect.Dialect;
 import org.apache.commons.lang3.StringUtils;
-
-import com.thinkgem.jeesite.common.persistence.dialect.Dialect;
 
 /**
  * Sql 2005的方言实现

@@ -1,16 +1,13 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.service;
 
-import java.util.List;
-
+import com.bei2love.kadima.commons.persistence.CrudDao;
+import com.bei2love.kadima.commons.persistence.DataEntity;
+import com.bei2love.kadima.commons.persistence.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.thinkgem.jeesite.common.persistence.CrudDao;
-import com.thinkgem.jeesite.common.persistence.DataEntity;
-import com.thinkgem.jeesite.common.persistence.Page;
+import java.util.List;
 
 /**
  * Service基类

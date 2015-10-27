@@ -5,28 +5,22 @@
  */
 package com.bei2love.kadima.commons.web;
 
-import java.io.UnsupportedEncodingException;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.StringTokenizer;
-import java.util.TreeMap;
-
-import javax.servlet.ServletRequest;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.google.common.net.HttpHeaders;
+import com.bei2love.kadima.commons.config.Global;
+import com.bei2love.kadima.commons.utils.Encodes;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.bei2love.kadima.modules.sys.security.SystemAuthorizingRealm.Principal;
+import com.bei2love.kadima.modules.sys.utils.UserUtils;
 import org.apache.commons.lang3.Validate;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.google.common.net.HttpHeaders;
-import com.thinkgem.jeesite.common.config.Global;
-import com.thinkgem.jeesite.common.utils.Encodes;
-import com.thinkgem.jeesite.common.utils.StringUtils;
-import com.thinkgem.jeesite.modules.sys.security.SystemAuthorizingRealm.Principal;
-import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
+import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  * Http与Servlet工具类.

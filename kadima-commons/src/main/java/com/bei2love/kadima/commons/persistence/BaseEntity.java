@@ -1,23 +1,19 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.persistence;
-
-import java.io.Serializable;
-import java.util.Map;
-
-import javax.xml.bind.annotation.XmlTransient;
-
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.collect.Maps;
-import com.thinkgem.jeesite.common.config.Global;
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.SupTreeList;
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.cols.SupCol;
-import com.thinkgem.jeesite.common.utils.StringUtils;
-import com.thinkgem.jeesite.modules.sys.entity.User;
-import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
+import com.bei2love.kadima.commons.config.Global;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.SupTreeList;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.cols.SupCol;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.bei2love.kadima.modules.sys.entity.User;
+import com.bei2love.kadima.modules.sys.utils.UserUtils;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
+import javax.xml.bind.annotation.XmlTransient;
+import java.io.Serializable;
+import java.util.Map;
 
 /**
  * Entity支持类

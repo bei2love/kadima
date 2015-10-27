@@ -1,33 +1,30 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.supcan;
 
-import java.lang.reflect.Method;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.bei2love.kadima.commons.config.Global;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.SupTreeList;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.cols.SupCol;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.cols.SupGroup;
+import com.bei2love.kadima.commons.supcan.treelist.TreeList;
+import com.bei2love.kadima.commons.supcan.treelist.cols.Col;
+import com.bei2love.kadima.commons.supcan.treelist.cols.Group;
+import com.bei2love.kadima.commons.utils.CacheUtils;
+import com.bei2love.kadima.commons.utils.SpringContextHolder;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.bei2love.kadima.commons.web.BaseController;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.thinkgem.jeesite.common.config.Global;
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.SupTreeList;
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.cols.SupCol;
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.cols.SupGroup;
-import com.thinkgem.jeesite.common.supcan.treelist.TreeList;
-import com.thinkgem.jeesite.common.supcan.treelist.cols.Col;
-import com.thinkgem.jeesite.common.supcan.treelist.cols.Group;
-import com.thinkgem.jeesite.common.utils.CacheUtils;
-import com.thinkgem.jeesite.common.utils.SpringContextHolder;
-import com.thinkgem.jeesite.common.utils.StringUtils;
-import com.thinkgem.jeesite.common.web.BaseController;
+import java.lang.reflect.Method;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 硕正Controller

@@ -1,19 +1,16 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.web;
-
-import javax.servlet.ServletConfig;
-import javax.servlet.http.HttpServletRequest;
-
-import com.thinkgem.jeesite.common.config.Global;
-import com.thinkgem.jeesite.common.utils.FileUtils;
-import com.thinkgem.jeesite.modules.sys.security.SystemAuthorizingRealm.Principal;
-import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
 
 import com.ckfinder.connector.configuration.Configuration;
 import com.ckfinder.connector.data.AccessControlLevel;
 import com.ckfinder.connector.utils.AccessControlUtil;
+import com.bei2love.kadima.commons.config.Global;
+import com.bei2love.kadima.commons.utils.FileUtils;
+import com.bei2love.kadima.modules.sys.security.SystemAuthorizingRealm.Principal;
+import com.bei2love.kadima.modules.sys.utils.UserUtils;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * CKFinder配置

@@ -1,15 +1,12 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.web;
 
-import java.io.InputStream;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.bei2love.kadima.commons.persistence.Page;
+import com.bei2love.kadima.commons.web.BaseController;
+import com.bei2love.kadima.modules.act.entity.Act;
+import com.bei2love.kadima.modules.act.service.ActTaskService;
+import com.bei2love.kadima.modules.act.utils.ActUtils;
+import com.bei2love.kadima.modules.sys.utils.UserUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,23 +17,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.bei2love.kadima.commons.persistence.Page;
-import com.bei2love.kadima.commons.web.BaseController;
-import com.thinkgem.jeesite.modules.act.entity.Act;
-import com.thinkgem.jeesite.modules.act.service.ActTaskService;
-import com.thinkgem.jeesite.modules.act.utils.ActUtils;
-import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.InputStream;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 流程个人任务相关Controller
  * @author ThinkGem
  * @version 2013-11-03
  */
-@Controller
-@RequestMapping(value = "${adminPath}/act/task")
+//@Controller
+//@RequestMapping(value = "${adminPath}/act/task")
 public class ActTaskController extends BaseController {
 
-	@Autowired
+//	@Autowired
 	private ActTaskService actTaskService;
 	
 	/**
@@ -159,7 +155,7 @@ public class ActTaskController extends BaseController {
 	 * @param vars 任务流程变量，如下
 	 * 		vars.keys=flag,pass
 	 * 		vars.values=1,true
-	 * 		vars.types=S,B  @see com.thinkgem.jeesite.modules.act.utils.PropertyType
+	 * 		vars.types=S,B  @see com.bei2love.kadima.modules.act.utils.PropertyType
 	 */
 	@RequestMapping(value = "complete")
 	@ResponseBody

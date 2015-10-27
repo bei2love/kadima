@@ -1,9 +1,7 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.persistence.dialect.db;
 
-import com.thinkgem.jeesite.common.persistence.dialect.Dialect;
+import com.bei2love.kadima.commons.persistence.dialect.Dialect;
 
 /**
  * Sybase数据库分页方言实现。

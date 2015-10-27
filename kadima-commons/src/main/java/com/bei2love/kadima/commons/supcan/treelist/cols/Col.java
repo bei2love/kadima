@@ -1,10 +1,8 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.supcan.treelist.cols;
 
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.cols.SupCol;
-import com.thinkgem.jeesite.common.utils.ObjectUtils;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.cols.SupCol;
+import com.bei2love.kadima.commons.utils.ObjectUtils;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamConverter;

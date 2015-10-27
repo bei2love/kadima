@@ -1,29 +1,26 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.utils;
+
+import com.bei2love.kadima.commons.annotation.FieldName;
+import com.bei2love.kadima.commons.config.Global;
+import com.bei2love.kadima.commons.utils.Encodes;
+import com.bei2love.kadima.commons.utils.ObjectUtils;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.bei2love.kadima.modules.act.entity.Act;
+import com.bei2love.kadima.modules.sys.entity.Role;
+import com.bei2love.kadima.modules.sys.entity.User;
+import org.activiti.engine.impl.persistence.entity.GroupEntity;
+import org.activiti.engine.impl.persistence.entity.UserEntity;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.activiti.engine.impl.persistence.entity.GroupEntity;
-import org.activiti.engine.impl.persistence.entity.UserEntity;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.bei2love.kadima.commons.annotation.FieldName;
-import com.bei2love.kadima.commons.config.Global;
-import com.bei2love.kadima.commons.utils.Encodes;
-import com.bei2love.kadima.commons.utils.ObjectUtils;
-import com.bei2love.kadima.commons.utils.StringUtils;
-import com.thinkgem.jeesite.modules.act.entity.Act;
-import com.thinkgem.jeesite.modules.sys.entity.Role;
-import com.thinkgem.jeesite.modules.sys.entity.User;
 
 /**
  * 流程工具

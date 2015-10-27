@@ -3,10 +3,8 @@
  */
 package com.bei2love.kadima.commons.security;
 
-import java.io.UnsupportedEncodingException;
-import java.security.GeneralSecurityException;
-import java.security.SecureRandom;
-import java.util.Arrays;
+import com.bei2love.kadima.commons.utils.Encodes;
+import com.bei2love.kadima.commons.utils.Exceptions;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
@@ -14,9 +12,10 @@ import javax.crypto.Mac;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-
-import com.thinkgem.jeesite.common.utils.Encodes;
-import com.thinkgem.jeesite.common.utils.Exceptions;
+import java.io.UnsupportedEncodingException;
+import java.security.GeneralSecurityException;
+import java.security.SecureRandom;
+import java.util.Arrays;
 
 /**
  * 支持HMAC-SHA1消息签名 及 DES/AES对称加密的工具类.

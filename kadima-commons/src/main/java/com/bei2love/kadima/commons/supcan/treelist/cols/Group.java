@@ -1,17 +1,15 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.supcan.treelist.cols;
 
-import java.util.List;
-
 import com.google.common.collect.Lists;
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.cols.SupGroup;
-import com.thinkgem.jeesite.common.utils.ObjectUtils;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.cols.SupGroup;
+import com.bei2love.kadima.commons.utils.ObjectUtils;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
+import java.util.List;
 
 /**
  * 硕正TreeList Cols Group

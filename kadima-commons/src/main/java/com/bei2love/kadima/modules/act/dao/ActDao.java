@@ -1,11 +1,9 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.dao;
 
 import com.bei2love.kadima.commons.persistence.CrudDao;
 import com.bei2love.kadima.commons.persistence.annotation.MyBatisDao;
-import com.thinkgem.jeesite.modules.act.entity.Act;
+import com.bei2love.kadima.modules.act.entity.Act;
 
 /**
  * 审批DAO接口

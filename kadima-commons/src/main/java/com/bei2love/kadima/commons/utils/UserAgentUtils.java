@@ -1,13 +1,11 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
-package com.bei2love.kadima.commons.utils;
 
-import javax.servlet.http.HttpServletRequest;
+package com.bei2love.kadima.commons.utils;
 
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.DeviceType;
 import eu.bitwalker.useragentutils.UserAgent;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 用户代理字符串识别工具

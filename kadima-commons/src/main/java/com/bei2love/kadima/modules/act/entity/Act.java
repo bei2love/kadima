@@ -1,24 +1,21 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.entity;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-
+import com.bei2love.kadima.commons.persistence.BaseEntity;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.bei2love.kadima.commons.utils.TimeUtils;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.bei2love.kadima.modules.act.utils.Variable;
 import org.activiti.engine.history.HistoricActivityInstance;
 import org.activiti.engine.history.HistoricTaskInstance;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.bei2love.kadima.commons.persistence.BaseEntity;
-import com.bei2love.kadima.commons.utils.StringUtils;
-import com.bei2love.kadima.commons.utils.TimeUtils;
-import com.thinkgem.jeesite.modules.act.utils.Variable;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 工作流Entity

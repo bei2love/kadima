@@ -1,15 +1,8 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.service;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.List;
-
-import javax.servlet.http.HttpServletResponse;
-
+import com.bei2love.kadima.commons.persistence.Page;
+import com.bei2love.kadima.commons.service.BaseService;
 import org.activiti.bpmn.converter.BpmnXMLConverter;
 import org.activiti.bpmn.model.BpmnModel;
 import org.activiti.editor.constants.ModelDataJsonConstants;
@@ -29,19 +22,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bei2love.kadima.commons.persistence.Page;
-import com.bei2love.kadima.commons.service.BaseService;
+import javax.servlet.http.HttpServletResponse;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 /**
  * 流程模型相关Controller
  * @author ThinkGem
  * @version 2013-11-03
  */
-@Service
-@Transactional(readOnly = true)
+//@Service
+//@Transactional(readOnly = true)
 public class ActModelService extends BaseService {
 
-	@Autowired
+//	@Autowired
 	private RepositoryService repositoryService;
 
 	/**

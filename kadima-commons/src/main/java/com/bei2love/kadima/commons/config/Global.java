@@ -1,18 +1,15 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.config;
+
+import com.ckfinder.connector.ServletContextFactory;
+import com.google.common.collect.Maps;
+import com.bei2love.kadima.commons.utils.PropertiesLoader;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import org.springframework.core.io.DefaultResourceLoader;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-
-import org.springframework.core.io.DefaultResourceLoader;
-
-import com.ckfinder.connector.ServletContextFactory;
-import com.google.common.collect.Maps;
-import com.thinkgem.jeesite.common.utils.PropertiesLoader;
-import com.thinkgem.jeesite.common.utils.StringUtils;
 
 /**
  * 全局配置类
@@ -34,7 +31,7 @@ public class Global {
 	/**
 	 * 属性文件加载对象
 	 */
-	private static PropertiesLoader loader = new PropertiesLoader("jeesite.properties");
+	private static PropertiesLoader loader = new PropertiesLoader("kadima.properties");
 
 	/**
 	 * 显示/隐藏

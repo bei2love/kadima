@@ -1,16 +1,14 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.utils.excel.fieldtype;
 
-import java.util.List;
-
 import com.google.common.collect.Lists;
-import com.thinkgem.jeesite.common.utils.StringUtils;
-import com.thinkgem.jeesite.common.utils.Collections3;
-import com.thinkgem.jeesite.common.utils.SpringContextHolder;
-import com.thinkgem.jeesite.modules.sys.entity.Role;
-import com.thinkgem.jeesite.modules.sys.service.SystemService;
+import com.bei2love.kadima.commons.utils.Collections3;
+import com.bei2love.kadima.commons.utils.SpringContextHolder;
+import com.bei2love.kadima.commons.utils.StringUtils;
+import com.bei2love.kadima.modules.sys.entity.Role;
+import com.bei2love.kadima.modules.sys.service.SystemService;
+
+import java.util.List;
 
 /**
  * 字段类型转换

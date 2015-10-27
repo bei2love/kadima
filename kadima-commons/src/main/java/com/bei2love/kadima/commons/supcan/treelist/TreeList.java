@@ -1,17 +1,15 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.supcan.treelist;
 
-import java.util.List;
-
 import com.google.common.collect.Lists;
-import com.thinkgem.jeesite.common.supcan.annotation.common.fonts.SupFont;
-import com.thinkgem.jeesite.common.supcan.annotation.treelist.SupTreeList;
-import com.thinkgem.jeesite.common.supcan.common.Common;
-import com.thinkgem.jeesite.common.supcan.common.fonts.Font;
-import com.thinkgem.jeesite.common.supcan.common.properties.Properties;
+import com.bei2love.kadima.commons.supcan.annotation.common.fonts.SupFont;
+import com.bei2love.kadima.commons.supcan.annotation.treelist.SupTreeList;
+import com.bei2love.kadima.commons.supcan.common.Common;
+import com.bei2love.kadima.commons.supcan.common.fonts.Font;
+import com.bei2love.kadima.commons.supcan.common.properties.Properties;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+import java.util.List;
 
 /**
  * 硕正TreeList

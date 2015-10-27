@@ -1,11 +1,11 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.modules.act.service.ext;
 
-import java.util.List;
-import java.util.Map;
-
+import com.bei2love.kadima.commons.utils.SpringContextHolder;
+import com.google.common.collect.Lists;
+import com.bei2love.kadima.modules.act.utils.ActUtils;
+import com.bei2love.kadima.modules.sys.entity.Role;
+import com.bei2love.kadima.modules.sys.service.SystemService;
 import org.activiti.engine.identity.Group;
 import org.activiti.engine.identity.User;
 import org.activiti.engine.identity.UserQuery;
@@ -16,11 +16,8 @@ import org.activiti.engine.impl.persistence.entity.UserEntity;
 import org.activiti.engine.impl.persistence.entity.UserEntityManager;
 import org.springframework.stereotype.Service;
 
-import com.google.common.collect.Lists;
-import com.bei2love.kadima.commons.utils.SpringContextHolder;
-import com.thinkgem.jeesite.modules.act.utils.ActUtils;
-import com.thinkgem.jeesite.modules.sys.entity.Role;
-import com.thinkgem.jeesite.modules.sys.service.SystemService;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Activiti User Entity Service
@@ -72,7 +69,7 @@ public class ActUserEntityService extends UserEntityManager {
 //		}
 		User user = findUserById(userId);
 		if (user != null) {
-			getSystemService().deleteUser(new com.thinkgem.jeesite.modules.sys.entity.User(user.getId()));
+			getSystemService().deleteUser(new com.bei2love.kadima.modules.sys.entity.User(user.getId()));
 		}
 	}
 
@@ -89,7 +86,7 @@ public class ActUserEntityService extends UserEntityManager {
 	public List<Group> findGroupsByUser(String userId) {
 //		return getDbSqlSession().selectList("selectGroupsByUserId", userId);
 		List<Group> list = Lists.newArrayList();
-		for (Role role : getSystemService().findRole(new Role(new com.thinkgem.jeesite.modules.sys.entity.User(null, userId)))){
+		for (Role role : getSystemService().findRole(new Role(new com.bei2love.kadima.modules.sys.entity.User(null, userId)))){
 			list.add(ActUtils.toActivitiGroup(role));
 		}
 		return list;

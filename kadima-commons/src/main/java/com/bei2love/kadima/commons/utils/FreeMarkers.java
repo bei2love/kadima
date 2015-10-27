@@ -1,18 +1,15 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.utils;
+
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+import org.springframework.core.io.DefaultResourceLoader;
+import org.springframework.core.io.Resource;
 
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.Map;
-
-import org.springframework.core.io.DefaultResourceLoader;
-import org.springframework.core.io.Resource;
-
-import freemarker.template.Configuration;
-import freemarker.template.Template;
 
 /**
  * FreeMarkers工具类

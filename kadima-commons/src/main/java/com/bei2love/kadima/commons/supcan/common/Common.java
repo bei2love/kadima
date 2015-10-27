@@ -1,15 +1,13 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.supcan.common;
 
-import java.util.List;
-
 import com.google.common.collect.Lists;
-import com.thinkgem.jeesite.common.supcan.common.fonts.Font;
-import com.thinkgem.jeesite.common.supcan.common.properties.Properties;
-import com.thinkgem.jeesite.common.utils.IdGen;
+import com.bei2love.kadima.commons.supcan.common.fonts.Font;
+import com.bei2love.kadima.commons.supcan.common.properties.Properties;
+import com.bei2love.kadima.commons.utils.IdGen;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+import java.util.List;
 
 /**
  * 硕正Common

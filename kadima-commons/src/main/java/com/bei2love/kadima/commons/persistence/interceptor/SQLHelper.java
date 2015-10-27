@@ -1,8 +1,9 @@
-/**
- * Copyright &copy; 2012-2014 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.bei2love.kadima.commons.persistence.interceptor;
 
+import com.bei2love.kadima.commons.persistence.Page;
+import com.bei2love.kadima.commons.persistence.dialect.Dialect;
+import com.bei2love.kadima.commons.utils.StringUtils;
 import org.apache.ibatis.executor.ErrorContext;
 import org.apache.ibatis.executor.ExecutorException;
 import org.apache.ibatis.logging.Log;
@@ -16,10 +17,6 @@ import org.apache.ibatis.scripting.xmltags.ForEachSqlNode;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.type.TypeHandler;
 import org.apache.ibatis.type.TypeHandlerRegistry;
-
-import com.thinkgem.jeesite.common.persistence.Page;
-import com.thinkgem.jeesite.common.persistence.dialect.Dialect;
-import com.thinkgem.jeesite.common.utils.StringUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
