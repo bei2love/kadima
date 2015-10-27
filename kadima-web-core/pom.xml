@@ -5,7 +5,7 @@
     <parent>
         <artifactId>kadima-parent</artifactId>
         <groupId>com.bei2love</groupId>
-        <version>1.0-SANPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
         <relativePath>../kadima-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -18,7 +18,7 @@
         <dependency>
             <groupId>com.bei2love</groupId>
             <artifactId>kadima-commons</artifactId>
-            <version>1.0-SANPSHOT</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

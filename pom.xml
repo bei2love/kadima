@@ -5,7 +5,7 @@
 	
 	<groupId>com.bei2love</groupId>
 	<artifactId>kadima</artifactId>
-	<version>1.0-SANPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<modules>
 		<module>kadima-parent</module>
 	</modules>
