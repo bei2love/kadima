@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class ActUserEntityServiceFactory implements SessionFactory {
 	
-	@Autowired
+//	@Autowired
 	private ActUserEntityService actUserEntityService;
 
 	public Class<?> getSessionType() {

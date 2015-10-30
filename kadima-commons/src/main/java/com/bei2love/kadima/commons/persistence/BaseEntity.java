@@ -51,6 +51,8 @@ public abstract class BaseEntity<T> implements Serializable {
 	 */
 	protected boolean isNewRecord = false;
 
+	protected String datasourceKey = "kadima";
+
 	public BaseEntity() {
 		
 	}
@@ -178,5 +180,12 @@ public abstract class BaseEntity<T> implements Serializable {
 	public static final String DEL_FLAG_NORMAL = "0";
 	public static final String DEL_FLAG_DELETE = "1";
 	public static final String DEL_FLAG_AUDIT = "2";
-	
+
+	public String getDatasourceKey() {
+		return datasourceKey;
+	}
+
+	public void setDatasourceKey(String datasourceKey) {
+		this.datasourceKey = datasourceKey;
+	}
 }

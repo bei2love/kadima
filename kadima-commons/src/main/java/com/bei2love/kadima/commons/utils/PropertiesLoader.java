@@ -12,8 +12,9 @@ import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 
@@ -141,8 +142,26 @@ public class PropertiesLoader {
 			InputStream is = null;
 			try {
 				Resource resource = resourceLoader.getResource(location);
-				is = resource.getInputStream();
-				props.load(is);
+				if (resource.getFile().isFile()) {
+					is = resource.getInputStream();
+					props.load(is);
+				}else {
+					File[] list = resource.getFile().listFiles(new FilenameFilter() {
+						@Override
+						public boolean accept(File dir, String name) {
+							return name.endsWith(".properties");
+						}
+					});
+					Arrays.sort(list, new Comparator<File>() {
+						@Override
+						public int compare(File o1, File o2) {
+							return o1.getName().compareTo(o2.getName());
+						}
+					});
+					for(File propFile : list){
+						props.load(new FileInputStream(propFile));
+					}
+				}
 			} catch (IOException ex) {
 				logger.info("Could not load properties from path:" + location + ", " + ex.getMessage());
 			} finally {

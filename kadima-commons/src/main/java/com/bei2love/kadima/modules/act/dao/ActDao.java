@@ -10,7 +10,7 @@ import com.bei2love.kadima.modules.act.entity.Act;
  * @author thinkgem
  * @version 2014-05-16
  */
-@MyBatisDao
+//@MyBatisDao
 public interface ActDao extends CrudDao<Act> {
 
 	public int updateProcInsIdByBusinessId(Act act);

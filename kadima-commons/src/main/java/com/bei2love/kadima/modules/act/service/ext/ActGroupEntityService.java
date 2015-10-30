@@ -23,7 +23,7 @@ import java.util.Map;
  * @author ThinkGem
  * @version 2013-12-05
  */
-@Service
+//@Service
 public class ActGroupEntityService extends GroupEntityManager {
 
 	private SystemService systemService;

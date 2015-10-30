@@ -24,7 +24,7 @@ import java.util.Map;
  * @author ThinkGem
  * @version 2013-11-03
  */
-@Service
+//@Service
 public class ActUserEntityService extends UserEntityManager {
 
 	private SystemService systemService;

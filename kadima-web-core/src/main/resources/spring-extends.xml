@@ -13,7 +13,6 @@
 	default-lazy-init="true">
 
 	<description>Spring Configuration</description>
-	
 
-	
+
 </beans>
